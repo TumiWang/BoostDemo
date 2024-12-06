@@ -1,0 +1,10 @@
+.ds_store
+.vscode
+
+local/
+prefix/
+
+temp/
+
+build/
+product/
