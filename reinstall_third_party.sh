@@ -25,7 +25,7 @@ if [ -f "$THIRD_PARTY_DIR/openssl-3.4.0.tar.gz" ]; then
         cd "$ROOT_DIR/$TEMP_DIR"
         tar -xzf "$ROOT_DIR/$THIRD_PARTY_DIR/openssl-3.4.0.tar.gz"
         cd openssl-3.4.0
-        ./configure --prefix="$ROOT_DIR/$PREFIX_DIR/$BUILD_TYPE" --$BUILD_TYPE no-shared no-docs
+        ./configure --prefix="$ROOT_DIR/$PREFIX_DIR/$BUILD_TYPE" --$BUILD_TYPE no-shared no-docs no-dso
         make
         # make test
         make install
